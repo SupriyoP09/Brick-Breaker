@@ -1,7 +1,11 @@
+let brick;
+
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(400, 400);
+  brick = new Brick(width/2, height/2, 100, 200);
 }
 
 function draw() {
-  background(225);
+  background(220);
+  brick.drawBrick();
 }
